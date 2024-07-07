@@ -27,7 +27,7 @@ jobs:
         run: pulumi login
 
       - name: Pulumi stack select
-        run: pulumi stack select dev --cwd Infra
+        run: pulumi stack select imnulhaqueruman/k3s-deployment/dev --cwd Infra
 
       - name: Pulumi refresh
         run: pulumi refresh --yes --cwd Infra
