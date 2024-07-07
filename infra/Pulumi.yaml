@@ -1,0 +1,11 @@
+name: k3s-deployment
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+description: k3s-deployment automation on aws using Github action , pulumi and ansible
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-python
